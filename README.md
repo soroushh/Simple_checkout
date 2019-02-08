@@ -50,3 +50,13 @@ basket.total()
 
 
 ,,,,
+
+,,,,
+
+require "./lib/simple_checkout.rb"
+
+item = Item.new("first", 12.899)
+
+"we are supposed to get errors because the price is not entered correctly."
+
+....

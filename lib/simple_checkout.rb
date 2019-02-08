@@ -1,7 +1,12 @@
 class Item
   def initialize(name, price)
-    @name = name
-    @price = price
+    if !((price*100).to_i == price*100)
+      raise ArgumentError, "The price is not entered correctly."
+    else
+      @name = name
+      @price = price
+    end
+
   end
 
   def price

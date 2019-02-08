@@ -19,7 +19,11 @@ end
       basket.add(item1)
       basket.add(item2)
       expect(basket.total).to eq 300
+   end
 
-    end
+   it "Raising an error when creating an object that does not have a proper price." do
+     expect {Item.new("first",123.456) }.to raise_error(ArgumentError, "The price is not entered correctly.")
+     
+   end
 
   end
