@@ -5,4 +5,13 @@ describe Item do
     item = Item.new("first_item",200)
     expect(item.price).to eq 200
   end
+
+  it "We can scan different items." do
+    item = Item.new("name",100)
+    expect(Item.scan(item)).to eq 100
+  end
+
+
+
+
 end

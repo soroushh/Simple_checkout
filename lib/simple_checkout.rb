@@ -8,5 +8,8 @@ class Item
     @price
   end
 
-  
+  def self.scan(item)
+    item.price
+  end
+
 end
